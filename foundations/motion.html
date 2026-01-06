@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion - GCC Design System</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+                        <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="foundations/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="foundations/color.html" class="nav-link">Color</a></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><a href="foundations/typography/gt-walsheim.html" class="nav-link">Typography: GT Walsheim</a></li>
+                                    <li><a href="foundations/typography/noto-sans-jp.html" class="nav-link">Typography: Noto Sans Japan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="foundations/effects.html" class="nav-link">Effects</a></li>
+                            <li><a href="foundations/spacing.html" class="nav-link">Spacing</a></li>
+                            <li><a href="foundations/grid.html" class="nav-link">Grid System</a></li>
+                            <li><a href="foundations/icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="foundations/illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="foundations/logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="foundations/system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Motion</h1>
+                <p class="lead">Animation principles, durations, and easing curves for consistent motion design.</p>
+
+                <section class="section">
+                    <h2>Animation Principles</h2>
+                    <ul>
+                        <li><strong>Purposeful</strong> - Motion should serve a functional purpose</li>
+                        <li><strong>Subtle</strong> - Animations should enhance, not distract</li>
+                        <li><strong>Consistent</strong> - Use standard durations and easing</li>
+                        <li><strong>Accessible</strong> - Respect reduced motion preferences</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Duration</h2>
+                    <p>Animation durations are standardized for consistency.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Duration</th>
+                                <th>Value</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>duration-fast</code></td>
+                                <td>150ms</td>
+                                <td>Micro-interactions, hover states</td>
+                            </tr>
+                            <tr>
+                                <td><code>duration-normal</code></td>
+                                <td>300ms</td>
+                                <td>Standard transitions, state changes</td>
+                            </tr>
+                            <tr>
+                                <td><code>duration-slow</code></td>
+                                <td>500ms</td>
+                                <td>Complex animations, page transitions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Easing</h2>
+                    <p>Easing functions define how animations accelerate and decelerate.</p>
+                    <ul>
+                        <li><strong>Ease In</strong> - Slow start, fast end (entering elements)</li>
+                        <li><strong>Ease Out</strong> - Fast start, slow end (exiting elements)</li>
+                        <li><strong>Ease In Out</strong> - Slow start and end (standard transitions)</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Usage Guidelines</h2>
+                    <h3>Do</h3>
+                    <ul>
+                        <li>Use motion to provide feedback for user actions</li>
+                        <li>Keep animations under 500ms for most interactions</li>
+                        <li>Respect <code>prefers-reduced-motion</code> media query</li>
+                    </ul>
+
+                    <h3>Don't</h3>
+                    <ul>
+                        <li>Animate everything - use motion sparingly</li>
+                        <li>Create jarring or overly complex animations</li>
+                        <li>Ignore accessibility preferences</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+

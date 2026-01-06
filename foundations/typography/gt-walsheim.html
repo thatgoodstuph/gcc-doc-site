@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography: GT Walsheim - GCC Design System</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+                        <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../color.html" class="nav-link">Color</a></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><span class="nav-link active">Typography: GT Walsheim</span></li>
+                                    <li><a href="noto-sans-jp.html" class="nav-link">Typography: Noto Sans Japan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../effects.html" class="nav-link">Effects</a></li>
+                            <li><a href="../spacing.html" class="nav-link">Spacing</a></li>
+                            <li><a href="../grid.html" class="nav-link">Grid System</a></li>
+                            <li><a href="../icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="../illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="../logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="../system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="../../components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="../../components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="../../components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="../../components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="../../components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="../../components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="../../components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="../../components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="../../components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="../../components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="../../components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="../../components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="../../components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="../../components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="../../components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="../../components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="../../components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="../../components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="../../components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="../../components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="../../components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="../../components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="../../components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="../../components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="../../components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="../../components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="../../components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="../../components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="../../components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="../../components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="../../components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="../../components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="../../patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="../../patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="../../patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="../../patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="../../patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="../../patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="../../patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="../../patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="../../patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="../../patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="../../patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="../../patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="../../patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="../../patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="../../patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="../../patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="../../patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="../../patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="../../patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="../../product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="../../product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="../../product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="../../product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="../../product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="../../meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="../../meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="../../meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Typography: GT Walsheim</h1>
+                <p class="lead">GT Walsheim Pro is the primary typeface for English (EN) content in the GCC Design System. This page documents the typography tokens, scale, and usage guidelines for GT Walsheim Pro.</p>
+
+                <!-- 1. Overview -->
+                <section class="section">
+                    <h2>Overview</h2>
+                    <p>
+                        GT Walsheim Pro is the primary English typography system used across GCC products. It provides a comprehensive
+                        type scale from large display sizes (Display 2XL at 72px) to small utility text (Text XS at 12px), with consistent
+                        sizing, line heights, and letter spacing that ensure readability and visual hierarchy.
+                    </p>
+                    <p>
+                        This typeface is used for all English-language content and interfaces, including headings, body text, labels,
+                        and UI elements. The system includes both Display styles (for headings and large text) and Text styles (for body
+                        content and smaller text). For Japanese (JP) content, see <a href="noto-sans-jp.html">Typography: Noto Sans Japan</a>.
+                    </p>
+                </section>
+
+                <!-- 2. Usage -->
+                <section class="section">
+                    <h2>Usage</h2>
+
+                    <h3>When to use</h3>
+                    <ul>
+                        <li>All English-language content across GCC products (Amway+, Wellbeing+, account management, checkout flows).</li>
+                        <li>Display styles for page titles, section headings, hero text, and prominent UI elements.</li>
+                        <li>Text styles for body content, paragraphs, labels, captions, and secondary information.</li>
+                        <li>When designing interfaces that require clear visual hierarchy and consistent typography.</li>
+                    </ul>
+
+                    <h3>When not to use</h3>
+                    <ul>
+                        <li>For Japanese (JP) content—use Noto Sans Japan instead.</li>
+                        <li>For decorative or marketing-only typography that intentionally breaks the system (only with design approval).</li>
+                        <li>For icon fonts or symbol-based typography (use the Icon system instead).</li>
+                    </ul>
+
+                    <h3>Dos &amp; Don'ts</h3>
+                    <h4>Do</h4>
+                    <ul>
+                        <li>Use GT Walsheim Pro tokens consistently across English content.</li>
+                        <li>Maintain proper line heights for optimal readability (as specified in the type scale).</li>
+                        <li>Use semantic HTML elements (h1-h6, p) with appropriate typography tokens.</li>
+                        <li>Respect letter spacing (tracking) values, especially for Display styles (-2% for Display 2XL through Display MD).</li>
+                        <li>Use Regular, Medium, and Bold weights as defined in the system.</li>
+                    </ul>
+
+                    <h4>Don't</h4>
+                    <ul>
+                        <li>Hard-code font sizes or line heights—always use design tokens.</li>
+                        <li>Mix GT Walsheim Pro with other typefaces in the same interface.</li>
+                        <li>Use more than 3-4 different text sizes on a single page.</li>
+                        <li>Create custom font weights outside the defined system (Regular, Medium, Bold).</li>
+                        <li>Override tracking values without design approval.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Anatomy -->
+                <section class="section">
+                    <h2>Anatomy</h2>
+                    <p>Each typography style in GT Walsheim Pro consists of the following properties:</p>
+                    <ul>
+                        <li><strong>Font family</strong> – GT Walsheim Pro (the typeface name).</li>
+                        <li><strong>Font size</strong> – the base size in pixels (e.g., 72px for Display 2XL, 16px for Text MD).</li>
+                        <li><strong>Line height</strong> – vertical spacing between lines in pixels (e.g., 90px for Display 2XL, 24px for Text MD).</li>
+                        <li><strong>Line height ratio</strong> – calculated as line height ÷ font size (e.g., 90px ÷ 72px = 1.25).</li>
+                        <li><strong>Tracking (letter spacing)</strong> – horizontal spacing between characters, expressed as a percentage (e.g., -2% for Display styles, 0% for Text styles).</li>
+                        <li><strong>Font weight</strong> – Regular (400), Medium (500), or Bold (700).</li>
+                    </ul>
+                </section>
+
+                <!-- 4. Behavior & States -->
+                <section class="section">
+                    <h2>Behavior &amp; States</h2>
+                    <p>
+                        Typography styles are static and do not change based on user interaction. However, font weights can be used
+                        to indicate hierarchy and emphasis:
+                    </p>
+                    <ul>
+                        <li><strong>Regular (400)</strong> – default weight for most content, provides optimal readability.</li>
+                        <li><strong>Medium (500)</strong> – used for subtle emphasis, subheadings, or medium-priority content.</li>
+                        <li><strong>Bold (700)</strong> – used for strong emphasis, primary headings, or high-priority content.</li>
+                    </ul>
+                    <p>
+                        Typography should remain accessible across all states. When text appears in interactive elements (buttons, links),
+                        ensure sufficient color contrast and maintain readable font sizes even in disabled or hover states.
+                    </p>
+                </section>
+
+                <!-- 5. Variants -->
+                <section class="section">
+                    <h2>Variants</h2>
+                    <p>The GT Walsheim Pro system includes two main variant categories:</p>
+                    <ul>
+                        <li><strong>Display styles</strong> – Large typography for headings and prominent text (Display 2XL, XL, LG, MD, SM, XS).</li>
+                        <li><strong>Text styles</strong> – Body and smaller text for content and UI elements (Text XL, LG, MD, SM, XS).</li>
+                    </ul>
+                    <p>
+                        All styles support three weight variants: Regular, Medium, and Bold. Display styles (2XL through MD) use -2% tracking
+                        for tighter letter spacing, while Display SM, Display XS, and all Text styles use 0% tracking.
+                    </p>
+                </section>
+
+                <!-- 6. Accessibility -->
+                <section class="section">
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>Maintain minimum font sizes: Text XS (12px) is the smallest size and should be used sparingly for labels and metadata only.</li>
+                        <li>Ensure sufficient color contrast: Text must meet WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text at 18px+).</li>
+                        <li>Respect user font scaling: Typography tokens should scale proportionally when users increase browser or OS font size.</li>
+                        <li>Use semantic HTML: Pair typography tokens with appropriate HTML elements (h1-h6 for headings, p for paragraphs).</li>
+                        <li>Maintain readable line lengths: Aim for 50-75 characters per line for optimal readability.</li>
+                        <li>Ensure adequate line height: Line height ratios (typically 1.25-1.5) provide comfortable reading spacing.</li>
+                    </ul>
+                </section>
+
+                <!-- 7. Tokens & Theming -->
+                <section class="section">
+                    <h2>Tokens &amp; Theming</h2>
+                    <p>
+                        Typography behavior should be driven by design tokens and not hard-coded values. Typography tokens follow this structure:
+                    </p>
+                    <ul>
+                        <li><code>typography.display.2xl</code>, <code>typography.display.xl</code>, <code>typography.display.lg</code>, etc.</li>
+                        <li><code>typography.text.xl</code>, <code>typography.text.lg</code>, <code>typography.text.md</code>, etc.</li>
+                        <li><code>typography.fontFamily.display</code> – "GT Walsheim Pro"</li>
+                        <li><code>typography.fontWeight.regular</code> (400), <code>typography.fontWeight.medium</code> (500), <code>typography.fontWeight.bold</code> (700)</li>
+                    </ul>
+                    <p>
+                        Implement these as CSS variables or theme values so typography can be adjusted centrally. Do not hard-code
+                        font sizes, line heights, or letter spacing in individual components.
+                    </p>
+                    <p>
+                        See <a href="../color.html">Color</a> for text color tokens and <a href="../spacing.html">Spacing</a> for how typography
+                        relates to spacing tokens.
+                    </p>
+                </section>
+
+                <!-- 8. Code & API -->
+                <section class="section">
+                    <h2>Code &amp; API</h2>
+                    <p>Typography tokens can be implemented using CSS variables or theme values. Example:</p>
+                    <pre><code>/* CSS Variables */
+:root {
+  --font-family-display: "GT Walsheim Pro", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  --typography-display-2xl-size: 72px;
+  --typography-display-2xl-line-height: 90px;
+  --typography-display-2xl-tracking: -2%;
+  
+  --typography-text-md-size: 16px;
+  --typography-text-md-line-height: 24px;
+  --typography-text-md-tracking: 0%;
+}
+
+/* Usage */
+.display-2xl {
+  font-family: var(--font-family-display);
+  font-size: var(--typography-display-2xl-size);
+  line-height: var(--typography-display-2xl-line-height);
+  letter-spacing: var(--typography-display-2xl-tracking);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-md {
+  font-family: var(--font-family-display);
+  font-size: var(--typography-text-md-size);
+  line-height: var(--typography-text-md-line-height);
+  letter-spacing: var(--typography-text-md-tracking);
+  font-weight: var(--font-weight-regular);
+}</code></pre>
+                    <p>
+                        Integrate these tokens into your design system theme so that components can consume them without redefining
+                        typography values. Always use tokens rather than hard-coded pixel values.
+                    </p>
+                </section>
+
+                <!-- 9. Examples -->
+                <section class="section">
+                    <h2>Examples</h2>
+                    <p>The GT Walsheim Pro type scale includes the following styles:</p>
+                    
+                    <h3>Display Styles</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Size / Line Height</th>
+                                <th>Line Height Ratio</th>
+                                <th>Tracking</th>
+                                <th>Weights</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Display 2XL</strong></td>
+                                <td><code>72px / 90px</code></td>
+                                <td>1.25</td>
+                                <td>-2%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large hero displays, major page titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display XL</strong></td>
+                                <td><code>60px / 72px</code></td>
+                                <td>1.2</td>
+                                <td>-2%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large displays, prominent headings</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display LG</strong></td>
+                                <td><code>48px / 60px</code></td>
+                                <td>1.25</td>
+                                <td>-2%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large headings, section titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display MD</strong></td>
+                                <td><code>36px / 45px</code></td>
+                                <td>1.25</td>
+                                <td>-2%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Medium headings, subsection titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display SM</strong></td>
+                                <td><code>30px / 39px</code></td>
+                                <td>1.3</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Small headings, component titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display XS</strong></td>
+                                <td><code>24px / 32px</code></td>
+                                <td>1.33</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Extra small headings, emphasized text</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Text Styles</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Size / Line Height</th>
+                                <th>Line Height Ratio</th>
+                                <th>Tracking</th>
+                                <th>Weights</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Text XL</strong></td>
+                                <td><code>20px / 30px</code></td>
+                                <td>1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large body text, emphasized content</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text LG</strong></td>
+                                <td><code>18px / 27px</code></td>
+                                <td>1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large body text, lead paragraphs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text MD</strong></td>
+                                <td><code>16px / 24px</code></td>
+                                <td>1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Default body text, paragraphs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text SM</strong></td>
+                                <td><code>14px / 21px</code></td>
+                                <td>1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Secondary text, captions, helper text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text XS</strong></td>
+                                <td><code>12px / 18px</code></td>
+                                <td>1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Labels, fine print, metadata</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        Refer to the
+                        <a href="https://www.figma.com/design/7kKBUTxpLNPIQhfi731Jm3/Foundation-2.0?node-id=6002-111"
+                           target="_blank" rel="noopener noreferrer">Figma Typography: GT Walsheim</a>
+                        file for canonical examples of each style with all three weights (Regular, Medium, Bold).
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
+

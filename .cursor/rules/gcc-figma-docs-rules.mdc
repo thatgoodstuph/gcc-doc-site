@@ -1,0 +1,84 @@
+---
+name: "gcc-design-system-docs-rules"
+description: "Primer-style rules for GCC design system documentation site and component pages"
+alwaysApply: false
+---
+
+# Context
+We are building a GCC design system documentation site, inspired by the structure of Primer’s docs (Foundations → Components → Patterns → Meta). 
+
+The site must:
+- Mirror the GCC component and pattern list currently documented in Figma.
+- Provide consistent, Material/Primer-style documentation for each component and pattern.
+
+# Information Architecture
+The site must use a persistent sidebar with the following top-level sections:
+
+## 1. Foundations
+- Color
+  - Color
+- Typography
+  - Typography: GT Walsheim
+  - Typography: Noto Sans Japan
+- Effects
+  - Effects (shadows, blurs, overlays)
+- Spacing
+  - Spacing
+- Grid
+  - Grid System
+- Icons
+  - Icon
+- Illustrations
+  - Illustration
+- Logo
+  - Logo
+- System Resources
+  - System Resource
+
+## 2. Components (Alphabetical)
+- Accordion, Audio Player, Badge / ABO Pin Level Badge, Breadcrumb, Button, Carousel, Checkbox, Context Menu / Ellipsis, Country Flags, Date Picker / Calendar, Drawer, Dropdowns, Error / Information Cards, Header Web, Highlights, Inline Messages, Input Fields, Loaders, Modal, Notification, Pagination, Pills / Chips, Progress Tracker / Slider / Stepper, Quantity Selector, Radio Buttons, Section Divider, Slide Over, Tabs, Tags, Text Area, Toggle, Tooltip, Variant Selector.
+
+## 3. Patterns
+- Article, Cart, Checkout, Coupons & Promo Cards, Data Visualization, Education Cards, Footer, Ingredient Card, List, Mobile Phone Verification, Product Cards, PDP Product Details, Ratings & Reviews, Rich Text Editor, Search, Share Bar, SOP Components, Sort / Filter, Table, User Name / Password / Password Strength.
+
+## 4. Product / Market
+- ABO Business Tools
+- Account Management Components
+- AI Components
+- Amway+
+- "JTX 定性調査 UJ 1-3"
+- Wellbeing+
+
+## 5. Meta
+- About GCC Design System
+- How to Use These Docs
+- Changelog
+- Contribution & Governance
+
+# Page Templates (Primer-style)
+
+## Foundations pages
+Each Foundations page must include: Overview, Tokens / Scales (tables/galleries), Usage (Dos/Don'ts), Examples, and Accessibility considerations.
+
+## Component / Pattern pages
+Every page under Components, Patterns, and Product / Market must follow this structure:
+1. **Overview**: 2–4 sentences on problem/solution.
+2. **Usage**: When to use/not use, Dos & Don’ts, Content guidance.
+3. **Anatomy**: Labeled breakdown mapping to code API/props.
+4. **Behavior & States**: Interaction, keyboard behavior, and responsive notes.
+5. **Variants**: Supported visual/behavioral variations.
+6. **Accessibility**: Semantic elements, ARIA roles, and keyboard requirements.
+7. **Tokens & Theming**: Key design tokens (no hard-coded hex/spacing).
+8. **Code & API**: Canonical code examples and Props table.
+9. **Examples**: Real GCC product scenarios and compositions.
+
+# General Rules
+- **Naming**: Drop the literal "GCC Component" suffix from UI titles.
+- **Style**: Concise, directive, and scannable (headings + bullets).
+- **Source of Truth**: If Figma and code disagree, call out the discrepancy but prefer the implemented code behavior.
+- **URLs**: 
+  - `/foundations/typography/gt-walsheim`
+  - `/foundations/typography/noto-sans-japan`
+  - `/components/[name]`
+  - `/patterns/[name]`
+  - `/product/[name]`

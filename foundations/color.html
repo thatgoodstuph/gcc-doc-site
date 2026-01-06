@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color - GCC Design System</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="overview.html" class="nav-link">Overview</a></li>
+                            <li><span class="nav-link active">Color</span></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><a href="typography/gt-walsheim.html" class="nav-link">Typography: GT Walsheim</a></li>
+                                    <li><a href="typography/noto-sans-jp.html" class="nav-link">Typography: Noto Sans Japan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="effects.html" class="nav-link">Effects</a></li>
+                            <li><a href="spacing.html" class="nav-link">Spacing</a></li>
+                            <li><a href="grid.html" class="nav-link">Grid System</a></li>
+                            <li><a href="icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="../components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="../components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="../components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="../components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="../components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="../components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="../components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="../components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="../components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="../components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="../components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="../components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="../components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="../components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="../components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="../components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="../components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="../components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="../components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="../components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="../components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="../components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="../components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="../components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="../components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="../components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="../components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="../components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="../components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="../components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="../components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="../components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="../patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="../patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="../patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="../patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="../patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="../patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="../patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="../patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="../patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="../patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="../patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="../patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="../patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="../patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="../patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="../patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="../patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="../patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="../patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="../product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="../product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="../product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="../product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="../product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="../meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="../meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="../meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Color</h1>
+                <p class="lead">The color system defines the palette and semantic color tokens used throughout the GCC Design System.</p>
+
+                <section class="section">
+                    <h2>Overview</h2>
+                    <p>The GCC color system provides a comprehensive palette organized into semantic categories: Primary Colors, Secondary Colors, Hover Colors, Notification Colors, Main Gray Colors, Illustration Colors, and Data Visualization Colors. The system also includes Dark Mode variants for many colors to support accessibility and design flexibility.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Primary Colors</h2>
+                    <p>Primary colors are the core brand colors used for key interactive elements and brand expression.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 Amway Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #2c2c2c; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#2c2c2c</code></td>
+                                <td>Primary brand color, text, buttons</td>
+                            </tr>
+                            <tr>
+                                <td>2 Pure White</td>
+                                <td><div style="width: 60px; height: 40px; background: #ffffff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#ffffff</code></td>
+                                <td>Backgrounds, text on dark surfaces</td>
+                            </tr>
+                            <tr>
+                                <td>3 Dark Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #38539a; border-radius: 4px;"></div></td>
+                                <td><code>#38539a</code></td>
+                                <td>Primary actions, brand elements</td>
+                            </tr>
+                            <tr>
+                                <td>4 Light Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #f1f2ff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f1f2ff</code></td>
+                                <td>Backgrounds, subtle accents</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Secondary Colors</h2>
+                    <p>Secondary colors provide additional palette options for varied contexts and use cases.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5 Dark Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #396e75; border-radius: 4px;"></div></td>
+                                <td><code>#396e75</code></td>
+                                <td>Secondary actions, accents</td>
+                            </tr>
+                            <tr>
+                                <td>6 Light Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #e5fdff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#e5fdff</code></td>
+                                <td>Light backgrounds, subtle accents</td>
+                            </tr>
+                            <tr>
+                                <td>7 Dark Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #546223; border-radius: 4px;"></div></td>
+                                <td><code>#546223</code></td>
+                                <td>Secondary actions, accents</td>
+                            </tr>
+                            <tr>
+                                <td>8 Light Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #f0fae5; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f0fae5</code></td>
+                                <td>Light backgrounds, subtle accents</td>
+                            </tr>
+                            <tr>
+                                <td>9 Dark Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #a65523; border-radius: 4px;"></div></td>
+                                <td><code>#a65523</code></td>
+                                <td>Secondary actions, accents</td>
+                            </tr>
+                            <tr>
+                                <td>10 Light Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #fff1e8; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#fff1e8</code></td>
+                                <td>Light backgrounds, subtle accents</td>
+                            </tr>
+                            <tr>
+                                <td>11 Dark Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #7f3e3e; border-radius: 4px;"></div></td>
+                                <td><code>#7f3e3e</code></td>
+                                <td>Secondary actions, accents</td>
+                            </tr>
+                            <tr>
+                                <td>12 Light Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #ffe2e2; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#ffe2e2</code></td>
+                                <td>Light backgrounds, subtle accents</td>
+                            </tr>
+                            <tr>
+                                <td>13 Dark Yellow</td>
+                                <td><div style="width: 60px; height: 40px; background: #62625a; border-radius: 4px;"></div></td>
+                                <td><code>#62625a</code></td>
+                                <td>Secondary actions, accents</td>
+                            </tr>
+                            <tr>
+                                <td>14 Light Yellow</td>
+                                <td><div style="width: 60px; height: 40px; background: #f8f8e7; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f8f8e7</code></td>
+                                <td>Light backgrounds, subtle accents</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Notification Colors</h2>
+                    <p>Notification colors communicate system status and user feedback. Each notification color includes a base color, outline variant, and background variant.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Base</th>
+                                <th>Outline</th>
+                                <th>Background</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Success Green</strong></td>
+                                <td><div style="width: 60px; height: 40px; background: #107f47; border-radius: 4px;"></div><br><code>#107f47</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #7fbc96; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#7fbc96</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #f0fae5; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#f0fae5</code></td>
+                                <td>Success states, confirmations, positive feedback</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Error Red</strong></td>
+                                <td><div style="width: 60px; height: 40px; background: #d91734; border-radius: 4px;"></div><br><code>#d91734</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #eb8593; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#eb8593</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #fdf4f4; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#fdf4f4</code></td>
+                                <td>Error states, warnings, critical feedback</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Alert Orange</strong></td>
+                                <td><div style="width: 60px; height: 40px; background: #a66400; border-radius: 4px;"></div><br><code>#a66400</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #d1b278; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#d1b278</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #fff9f0; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#fff9f0</code></td>
+                                <td>Warning states, cautions, important notices</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Action Purple</strong></td>
+                                <td><div style="width: 60px; height: 40px; background: #38539a; border-radius: 4px;"></div><br><code>#38539a</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #94a3cd; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#94a3cd</code></td>
+                                <td><div style="width: 60px; height: 40px; background: #f1f2ff; border-radius: 4px; border: 1px solid #e0e0e0;"></div><br><code>#f1f2ff</code></td>
+                                <td>Action states, informational messages</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Main Gray Colors</h2>
+                    <p>Gray colors provide the neutral foundation for backgrounds, text, borders, and disabled states.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27 Off White - Large BGs</td>
+                                <td><div style="width: 60px; height: 40px; background: #fafafa; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#fafafa</code></td>
+                                <td>Large background areas</td>
+                            </tr>
+                            <tr>
+                                <td>28 Light Gray - Small BGs</td>
+                                <td><div style="width: 60px; height: 40px; background: #f4f4f4; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f4f4f4</code></td>
+                                <td>Small background areas, cards</td>
+                            </tr>
+                            <tr>
+                                <td>29 Light Gray - Creators BG</td>
+                                <td><div style="width: 60px; height: 40px; background: #f0f0f0; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f0f0f0</code></td>
+                                <td>Creator/content background areas</td>
+                            </tr>
+                            <tr>
+                                <td>30 Light Gray - Rule Lines</td>
+                                <td><div style="width: 60px; height: 40px; background: #e4e4e4; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#e4e4e4</code></td>
+                                <td>Dividers, rule lines, borders</td>
+                            </tr>
+                            <tr>
+                                <td>31 Light Gray - Rule Lines 2</td>
+                                <td><div style="width: 60px; height: 40px; background: #d6d6d6; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#d6d6d6</code></td>
+                                <td>Secondary dividers, rule lines</td>
+                            </tr>
+                            <tr>
+                                <td>32 Mid Gray on Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #949494; border-radius: 4px;"></div></td>
+                                <td><code>#949494</code></td>
+                                <td>Text on dark backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>33 Dark Gray Text on White BG</td>
+                                <td><div style="width: 60px; height: 40px; background: #707070; border-radius: 4px;"></div></td>
+                                <td><code>#707070</code></td>
+                                <td>Secondary text on white backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>34 Dark Gray Text on Creators BG</td>
+                                <td><div style="width: 60px; height: 40px; background: #5e5e5e; border-radius: 4px;"></div></td>
+                                <td><code>#5e5e5e</code></td>
+                                <td>Text on creator backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>35 Disabled Gray Button Background</td>
+                                <td><div style="width: 60px; height: 40px; background: #d9d9d9; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#d9d9d9</code></td>
+                                <td>Disabled button backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>36 Disabled Gray Text on White</td>
+                                <td><div style="width: 60px; height: 40px; background: #707070; border-radius: 4px;"></div></td>
+                                <td><code>#707070</code></td>
+                                <td>Disabled text on white</td>
+                            </tr>
+                            <tr>
+                                <td>37 Disabled Gray on #35 Gray</td>
+                                <td><div style="width: 60px; height: 40px; background: #5e5e5e; border-radius: 4px;"></div></td>
+                                <td><code>#5e5e5e</code></td>
+                                <td>Disabled text on disabled backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>38 Drop Shadow</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(0,0,0,0.1); border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#000000</code><br><small>@ 10% opacity</small></td>
+                                <td>Shadow effects, elevation</td>
+                            </tr>
+                            <tr>
+                                <td>39 Modal Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(112,112,112,0.7); border-radius: 4px;"></div></td>
+                                <td><code>#707070</code><br><small>@ 70% opacity</small></td>
+                                <td>Modal overlay backgrounds</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Hover Colors</h2>
+                    <p>Hover colors are darker shades used for interactive elements on hover states (desktop only). These colors provide visual feedback when users interact with buttons and other clickable elements. Hover colors are inherited from the base colors defined in the Primary, Secondary, and Notification color sections.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hover Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #1b3067; border-radius: 4px;"></div></td>
+                                <td><code>#1b3067</code></td>
+                                <td>Hover state for Dark Purple (3)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #000000; border-radius: 4px;"></div></td>
+                                <td><code>#000000</code></td>
+                                <td>Hover state for Amway Black (1)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Dark Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #1c464b; border-radius: 4px;"></div></td>
+                                <td><code>#1c464b</code></td>
+                                <td>Hover state for Dark Blue (5)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Dark Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #323d0b; border-radius: 4px;"></div></td>
+                                <td><code>#323d0b</code></td>
+                                <td>Hover state for Dark Green (7)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Dark Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #6d320d; border-radius: 4px;"></div></td>
+                                <td><code>#6d320d</code></td>
+                                <td>Hover state for Dark Orange (9)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Dark Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #401313; border-radius: 4px;"></div></td>
+                                <td><code>#401313</code></td>
+                                <td>Hover state for Dark Red (11)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Dark Yellow</td>
+                                <td><div style="width: 60px; height: 40px; background: #303020; border-radius: 4px;"></div></td>
+                                <td><code>#303020</code></td>
+                                <td>Hover state for Dark Yellow (13)</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Success Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #0d6639; border-radius: 4px;"></div></td>
+                                <td><code>#0d6639</code></td>
+                                <td>Hover state for Success Green</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Alert Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #7e4c00; border-radius: 4px;"></div></td>
+                                <td><code>#7e4c00</code></td>
+                                <td>Hover state for Alert Orange</td>
+                            </tr>
+                            <tr>
+                                <td>Hover Error Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #a9142a; border-radius: 4px;"></div></td>
+                                <td><code>#a9142a</code></td>
+                                <td>Hover state for Error Red</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Illustration Colors</h2>
+                    <p>Illustration colors provide a palette for illustrations, decorative elements, and visual content. These colors are designed to work harmoniously together and support brand expression in visual storytelling.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Contessa</td>
+                                <td><div style="width: 60px; height: 40px; background: #ca7f7f; border-radius: 4px;"></div></td>
+                                <td><code>#ca7f7f</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Cavern Pink</td>
+                                <td><div style="width: 60px; height: 40px; background: #d69e9e; border-radius: 4px;"></div></td>
+                                <td><code>#d69e9e</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Cavern Lt Pink</td>
+                                <td><div style="width: 60px; height: 40px; background: #e4bcba; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#e4bcba</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Tan</td>
+                                <td><div style="width: 60px; height: 40px; background: #cfaa74; border-radius: 4px;"></div></td>
+                                <td><code>#cfaa74</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Peach Yellow</td>
+                                <td><div style="width: 60px; height: 40px; background: #fbd9a7; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#fbd9a7</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Linen</td>
+                                <td><div style="width: 60px; height: 40px; background: #f8e5d1; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f8e5d1</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Husk</td>
+                                <td><div style="width: 60px; height: 40px; background: #b7aa6a; border-radius: 4px;"></div></td>
+                                <td><code>#b7aa6a</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Pine Glade</td>
+                                <td><div style="width: 60px; height: 40px; background: #c8cd97; border-radius: 4px;"></div></td>
+                                <td><code>#c8cd97</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Beryl Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #e7ead0; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#e7ead0</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Gumbo</td>
+                                <td><div style="width: 60px; height: 40px; background: #6d8e95; border-radius: 4px;"></div></td>
+                                <td><code>#6d8e95</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Jungle Mist</td>
+                                <td><div style="width: 60px; height: 40px; background: #b6d1d6; border-radius: 4px;"></div></td>
+                                <td><code>#b6d1d6</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Black Squeeze</td>
+                                <td><div style="width: 60px; height: 40px; background: #eaf6f7; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#eaf6f7</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Salt Box</td>
+                                <td><div style="width: 60px; height: 40px; background: #574f5f; border-radius: 4px;"></div></td>
+                                <td><code>#574f5f</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Pale Sky</td>
+                                <td><div style="width: 60px; height: 40px; background: #7b7d80; border-radius: 4px;"></div></td>
+                                <td><code>#7b7d80</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                            <tr>
+                                <td>Gray Suit</td>
+                                <td><div style="width: 60px; height: 40px; background: #c1c0cc; border-radius: 4px;"></div></td>
+                                <td><code>#c1c0cc</code></td>
+                                <td>Illustrations, decorative elements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Data Visualization Colors</h2>
+                    <p>Data visualization colors are used for charts, graphs, and data displays. These colors are optimized for differentiation and accessibility in data presentation. Many colors include background variants (10% opacity) for use in charts and graphs.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data Viz Color 1</td>
+                                <td><div style="width: 60px; height: 40px; background: #c8f8d1; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#c8f8d1</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 2</td>
+                                <td><div style="width: 60px; height: 40px; background: #87c9c8; border-radius: 4px;"></div></td>
+                                <td><code>#87c9c8</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 3</td>
+                                <td><div style="width: 60px; height: 40px; background: #5291b1; border-radius: 4px;"></div></td>
+                                <td><code>#5291b1</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 3 Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(82,145,177,0.1); border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#5291b1</code><br><small>@ 10% opacity</small></td>
+                                <td>Chart backgrounds, subtle fills</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 4</td>
+                                <td><div style="width: 60px; height: 40px; background: #445685; border-radius: 4px;"></div></td>
+                                <td><code>#445685</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 5</td>
+                                <td><div style="width: 60px; height: 40px; background: #181d61; border-radius: 4px;"></div></td>
+                                <td><code>#181d61</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 5 Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(24,29,97,0.1); border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#181d61</code><br><small>@ 10% opacity</small></td>
+                                <td>Chart backgrounds, subtle fills</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 6</td>
+                                <td><div style="width: 60px; height: 40px; background: #5969d6; border-radius: 4px;"></div></td>
+                                <td><code>#5969d6</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 7</td>
+                                <td><div style="width: 60px; height: 40px; background: #ea999d; border-radius: 4px;"></div></td>
+                                <td><code>#ea999d</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 8</td>
+                                <td><div style="width: 60px; height: 40px; background: #b6577e; border-radius: 4px;"></div></td>
+                                <td><code>#b6577e</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 8 Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(182,87,126,0.1); border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#b6577e</code><br><small>@ 10% opacity</small></td>
+                                <td>Chart backgrounds, subtle fills</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 9</td>
+                                <td><div style="width: 60px; height: 40px; background: #7e3e80; border-radius: 4px;"></div></td>
+                                <td><code>#7e3e80</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 10</td>
+                                <td><div style="width: 60px; height: 40px; background: #1e247f; border-radius: 4px;"></div></td>
+                                <td><code>#1e247f</code></td>
+                                <td>Charts, graphs, data displays</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Color 10 Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(30,36,127,0.1); border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#1e247f</code><br><small>@ 10% opacity</small></td>
+                                <td>Chart backgrounds, subtle fills</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Success Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #107f47; border-radius: 4px;"></div></td>
+                                <td><code>#107f47</code></td>
+                                <td>Success indicators in charts</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Alert Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #da7600; border-radius: 4px;"></div></td>
+                                <td><code>#da7600</code></td>
+                                <td>Warning indicators in charts</td>
+                            </tr>
+                            <tr>
+                                <td>Data Viz Error Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #d91734; border-radius: 4px;"></div></td>
+                                <td><code>#d91734</code></td>
+                                <td>Error indicators in charts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Dark Mode</h2>
+                    <p>The color system includes Dark Mode variants for primary colors, notification colors, main gray colors, illustration colors, and data visualization colors. Dark Mode colors are optimized for accessibility and visual comfort in low-light environments.</p>
+
+                    <h3>Dark Mode Primary Colors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Solid Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #000000; border-radius: 4px;"></div></td>
+                                <td><code>#000000</code></td>
+                                <td>Dark mode backgrounds, text</td>
+                            </tr>
+                            <tr>
+                                <td>Solid White</td>
+                                <td><div style="width: 60px; height: 40px; background: #ffffff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#ffffff</code></td>
+                                <td>Dark mode text on dark backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>Cold Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #99b2f5; border-radius: 4px;"></div></td>
+                                <td><code>#99b2f5</code></td>
+                                <td>Dark mode primary actions</td>
+                            </tr>
+                            <tr>
+                                <td>4 Light Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #f1f2ff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f1f2ff</code></td>
+                                <td>Dark mode backgrounds, accents</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Dark Mode Notification Colors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gulf Stream Green</td>
+                                <td><div style="width: 60px; height: 40px; background: #7fbc96; border-radius: 4px;"></div></td>
+                                <td><code>#7fbc96</code></td>
+                                <td>Dark mode success states</td>
+                            </tr>
+                            <tr>
+                                <td>16 Success Green Outline</td>
+                                <td><div style="width: 60px; height: 40px; background: #7fbc96; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#7fbc96</code></td>
+                                <td>Dark mode success outlines</td>
+                            </tr>
+                            <tr>
+                                <td>Jasper Red</td>
+                                <td><div style="width: 60px; height: 40px; background: #d7354d; border-radius: 4px;"></div></td>
+                                <td><code>#d7354d</code></td>
+                                <td>Dark mode error states</td>
+                            </tr>
+                            <tr>
+                                <td>19 Error Red Outline</td>
+                                <td><div style="width: 60px; height: 40px; background: #eb8593; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#eb8593</code></td>
+                                <td>Dark mode error outlines</td>
+                            </tr>
+                            <tr>
+                                <td>20 Error Red Background</td>
+                                <td><div style="width: 60px; height: 40px; background: #fdf4f4; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#fdf4f4</code></td>
+                                <td>Dark mode error backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>21 Alert Orange</td>
+                                <td><div style="width: 60px; height: 40px; background: #a66400; border-radius: 4px;"></div></td>
+                                <td><code>#a66400</code></td>
+                                <td>Dark mode warning states</td>
+                            </tr>
+                            <tr>
+                                <td>22 Alert Orange Outline</td>
+                                <td><div style="width: 60px; height: 40px; background: #d1b278; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#d1b278</code></td>
+                                <td>Dark mode warning outlines</td>
+                            </tr>
+                            <tr>
+                                <td>23 Alert Orange Background</td>
+                                <td><div style="width: 60px; height: 40px; background: #fff9f0; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#fff9f0</code></td>
+                                <td>Dark mode warning backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>Cold Purple</td>
+                                <td><div style="width: 60px; height: 40px; background: #99b2f5; border-radius: 4px;"></div></td>
+                                <td><code>#99b2f5</code></td>
+                                <td>Dark mode action states</td>
+                            </tr>
+                            <tr>
+                                <td>25 Action Purple Outline</td>
+                                <td><div style="width: 60px; height: 40px; background: #94a3cd; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#94a3cd</code></td>
+                                <td>Dark mode action outlines</td>
+                            </tr>
+                            <tr>
+                                <td>26 Action Purple Background</td>
+                                <td><div style="width: 60px; height: 40px; background: #f1f2ff; border-radius: 4px; border: 1px solid #e0e0e0;"></div></td>
+                                <td><code>#f1f2ff</code></td>
+                                <td>Dark mode action backgrounds</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Dark Mode Main Gray Colors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dark Mode Modal Background</td>
+                                <td><div style="width: 60px; height: 40px; background: rgba(0,0,0,0.7); border-radius: 4px;"></div></td>
+                                <td><code>#000000</code><br><small>@ 70% opacity</small></td>
+                                <td>Dark mode modal overlays</td>
+                            </tr>
+                            <tr>
+                                <td>Solid Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #151515; border-radius: 4px;"></div></td>
+                                <td><code>#151515</code></td>
+                                <td>Dark mode primary background</td>
+                            </tr>
+                            <tr>
+                                <td>Eerie Black</td>
+                                <td><div style="width: 60px; height: 40px; background: #1c1c1e; border-radius: 4px;"></div></td>
+                                <td><code>#1c1c1e</code></td>
+                                <td>Dark mode secondary backgrounds</td>
+                            </tr>
+                            <tr>
+                                <td>Dark Charcoal</td>
+                                <td><div style="width: 60px; height: 40px; background: #282828; border-radius: 4px;"></div></td>
+                                <td><code>#282828</code></td>
+                                <td>Dark mode elevated surfaces</td>
+                            </tr>
+                            <tr>
+                                <td>Shadow Gray</td>
+                                <td><div style="width: 60px; height: 40px; background: #3a3a3c; border-radius: 4px;"></div></td>
+                                <td><code>#3a3a3c</code></td>
+                                <td>Dark mode dividers, borders</td>
+                            </tr>
+                            <tr>
+                                <td>Wrought Iron Gate</td>
+                                <td><div style="width: 60px; height: 40px; background: #48484a; border-radius: 4px;"></div></td>
+                                <td><code>#48484a</code></td>
+                                <td>Dark mode secondary text</td>
+                            </tr>
+                            <tr>
+                                <td>Granite Gray</td>
+                                <td><div style="width: 60px; height: 40px; background: #636366; border-radius: 4px;"></div></td>
+                                <td><code>#636366</code></td>
+                                <td>Dark mode disabled states</td>
+                            </tr>
+                            <tr>
+                                <td>Venus Gray</td>
+                                <td><div style="width: 60px; height: 40px; background: #8e8e93; border-radius: 4px;"></div></td>
+                                <td><code>#8e8e93</code></td>
+                                <td>Dark mode tertiary text</td>
+                            </tr>
+                            <tr>
+                                <td>Aluminum Silver</td>
+                                <td><div style="width: 60px; height: 40px; background: #aeaeb2; border-radius: 4px;"></div></td>
+                                <td><code>#aeaeb2</code></td>
+                                <td>Dark mode secondary text</td>
+                            </tr>
+                            <tr>
+                                <td>Timberwolf Gray</td>
+                                <td><div style="width: 60px; height: 40px; background: #d8d8d9; border-radius: 4px;"></div></td>
+                                <td><code>#d8d8d9</code></td>
+                                <td>Dark mode primary text</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Dark Mode Illustration Colors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dark Lilac</td>
+                                <td><div style="width: 60px; height: 40px; background: #8e76a6; border-radius: 4px;"></div></td>
+                                <td><code>#8e76a6</code></td>
+                                <td>Dark mode illustrations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Dark Mode Data Visualization Colors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dust Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #667dbb; border-radius: 4px;"></div></td>
+                                <td><code>#667dbb</code></td>
+                                <td>Dark mode charts, graphs</td>
+                            </tr>
+                            <tr>
+                                <td>Steel Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #7679ac; border-radius: 4px;"></div></td>
+                                <td><code>#7679ac</code></td>
+                                <td>Dark mode charts, graphs</td>
+                            </tr>
+                            <tr>
+                                <td>Slate Blue</td>
+                                <td><div style="width: 60px; height: 40px; background: #6677e9; border-radius: 4px;"></div></td>
+                                <td><code>#6677e9</code></td>
+                                <td>Dark mode charts, graphs</td>
+                            </tr>
+                            <tr>
+                                <td>Deep Fuchsia</td>
+                                <td><div style="width: 60px; height: 40px; background: #af60b1; border-radius: 4px;"></div></td>
+                                <td><code>#af60b1</code></td>
+                                <td>Dark mode charts, graphs</td>
+                            </tr>
+                            <tr>
+                                <td>Periwinkle</td>
+                                <td><div style="width: 60px; height: 40px; background: #8b91ed; border-radius: 4px;"></div></td>
+                                <td><code>#8b91ed</code></td>
+                                <td>Dark mode charts, graphs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Usage Guidelines</h2>
+                    <h3>Do</h3>
+                    <ul>
+                        <li>Use semantic color tokens in code (e.g., <code>color.primary</code>, <code>color.success</code>)</li>
+                        <li>Maintain sufficient contrast ratios for accessibility (WCAG AA minimum)</li>
+                        <li>Use color in combination with other indicators (icons, text, shapes)</li>
+                        <li>Reference notification colors with their outline and background variants when appropriate</li>
+                        <li>Use gray colors from the Main Gray Colors palette for neutral elements</li>
+                    </ul>
+
+                    <h3>Don't</h3>
+                    <ul>
+                        <li>Hard-code hex values in components—always use design tokens</li>
+                        <li>Use color as the only means of conveying information</li>
+                        <li>Create custom color variations outside the defined palette</li>
+                        <li>Mix color categories arbitrarily—use colors within their intended category</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Figma Reference</h2>
+                    <p>View the complete color library specifications in Figma:</p>
+                    <p><a href="https://www.figma.com/design/AP59m35yLPOJ9AXXxqppLq/1-Color-Library---Text-Style-Library---Effects?node-id=3323-47" target="_blank" rel="noopener noreferrer">Color Library - Figma</a></p>
+                    <p>The Figma file includes all color specifications, hex values, usage notes, and Dark Mode variants.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

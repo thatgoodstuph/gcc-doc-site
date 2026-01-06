@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects - GCC Design System</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="color.html" class="nav-link">Color</a></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><a href="typography/gt-walsheim.html" class="nav-link">Typography: GT Walsheim</a></li>
+                                    <li><a href="typography/noto-sans-jp.html" class="nav-link">Typography: Noto Sans Japan</a></li>
+                                </ul>
+                            </li>
+                            <li><span class="nav-link active">Effects</span></li>
+                            <li><a href="spacing.html" class="nav-link">Spacing</a></li>
+                            <li><a href="grid.html" class="nav-link">Grid System</a></li>
+                            <li><a href="icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="../components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="../components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="../components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="../components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="../components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="../components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="../components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="../components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="../components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="../components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="../components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="../components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="../components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="../components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="../components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="../components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="../components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="../components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="../components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="../components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="../components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="../components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="../components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="../components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="../components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="../components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="../components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="../components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="../components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="../components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="../components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="../components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="../patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="../patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="../patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="../patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="../patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="../patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="../patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="../patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="../patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="../patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="../patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="../patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="../patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="../patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="../patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="../patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="../patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="../patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="../patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="../product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="../product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="../product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="../product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="../product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="../meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="../meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="../meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Effects</h1>
+                <p class="lead">Effects in the GCC Design System define how elevation, depth, and overlays are rendered across light and dark modes.</p>
+
+                <section class="section">
+                    <h2>Overview</h2>
+                    <p>
+                        Effects provide depth, hierarchy, and focus. The primary effect tokens defined in the GCC library are
+                        drop shadows for cards and surfaces in both light and dark modes. These tokens ensure consistent
+                        elevation behavior across components such as cards, modals, drawers, and dropdowns.
+                    </p>
+                    <p>
+                        Effects must always be implemented via design tokens (e.g., <code>effect.card.shadow</code>),
+                        never via hard-coded shadow values.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>Effect Tokens</h2>
+                    <p>
+                        The following tokens are defined in the Figma library
+                        (<a href="https://www.figma.com/design/AP59m35yLPOJ9AXXxqppLq/1-Color-Library---Text-Style-Library---Effects?node-id=119-795"
+                           target="_blank" rel="noopener noreferrer">Effects – Figma</a>).
+                    </p>
+
+                    <h3>Card Drop Shadow (Light Mode)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Description</th>
+                                <th>Box Shadow</th>
+                                <th>Color</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>effect.card.shadow</code></td>
+                                <td>Default card drop shadow in light mode</td>
+                                <td><code>0px 2px 16px 0px rgba(44,44,44,0.1)</code></td>
+                                <td><code>#2c2c2c</code> @ 10% opacity</td>
+                                <td>Cards, elevated surfaces, dropdowns, and flyouts in light mode</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Card Drop Shadow (Dark Mode)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Description</th>
+                                <th>Box Shadow</th>
+                                <th>Color</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>effect.card.shadow.dark</code></td>
+                                <td>Card drop shadow for dark mode surfaces</td>
+                                <td><code>0px 2px 16px 6px rgba(0,0,0,0.84)</code></td>
+                                <td><code>#000000</code> @ 84% opacity</td>
+                                <td>Cards, elevated surfaces, dropdowns, and flyouts in dark mode</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section">
+                    <h2>Usage Guidelines</h2>
+                    <h3>Do</h3>
+                    <ul>
+                        <li>Use the card shadow tokens for all elevated surfaces (cards, dropdowns, drawers, modals).</li>
+                        <li>Keep elevation consistent within a view (e.g., all primary cards use the same shadow token).</li>
+                        <li>Pair shadows with appropriate background colors from the Color foundation (e.g., main gray and dark mode gray tokens).</li>
+                    </ul>
+
+                    <h3>Don't</h3>
+                    <ul>
+                        <li>Hard‑code custom box-shadow values in components.</li>
+                        <li>Stack multiple different shadow tokens on the same surface.</li>
+                        <li>Use heavy shadows on low-contrast backgrounds that reduce readability.</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Examples</h2>
+                    <p>The following examples illustrate how effect tokens are applied to GCC components:</p>
+                    <ul>
+                        <li><strong>Cards:</strong> Product cards and education cards use <code>effect.card.shadow</code> in light mode and <code>effect.card.shadow.dark</code> in dark mode.</li>
+                        <li><strong>Modals:</strong> Modal containers use the card shadow tokens combined with modal background colors from the Color foundation.</li>
+                        <li><strong>Drawers &amp; Slide Overs:</strong> Use the same elevation tokens as cards to maintain a consistent depth hierarchy.</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Accessibility Considerations</h2>
+                    <ul>
+                        <li>Do not rely on shadows alone to convey elevation—use borders, color, and spacing in combination.</li>
+                        <li>Ensure that elevated surfaces maintain sufficient contrast against their backgrounds.</li>
+                        <li>Verify that focus rings remain visible on elevated surfaces with shadows applied.</li>
+                    </ul>
+
+                    <p>
+                        For related tokens, see
+                        <a href="color.html">Color</a> (Drop Shadow and Modal Background) and
+                        <a href="spacing.html">Spacing</a> for layout and spacing scales.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

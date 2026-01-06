@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System - GCC Design System</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="color.html" class="nav-link">Color</a></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><a href="typography/gt-walsheim.html" class="nav-link">Typography: GT Walsheim</a></li>
+                                    <li><a href="typography/noto-sans-jp.html" class="nav-link">Typography: Noto Sans Japan</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="effects.html" class="nav-link">Effects</a></li>
+                            <li><a href="spacing.html" class="nav-link">Spacing</a></li>
+                            <li><span class="nav-link active">Grid System</span></li>
+                            <li><a href="icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="../components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="../components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="../components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="../components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="../components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="../components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="../components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="../components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="../components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="../components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="../components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="../components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="../components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="../components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="../components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="../components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="../components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="../components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="../components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="../components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="../components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="../components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="../components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="../components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="../components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="../components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="../components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="../components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="../components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="../components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="../components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="../components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="../patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="../patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="../patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="../patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="../patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="../patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="../patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="../patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="../patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="../patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="../patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="../patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="../patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="../patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="../patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="../patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="../patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="../patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="../patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="../product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="../product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="../product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="../product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="../product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="../meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="../meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="../meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Grid System</h1>
+                <p class="lead">The GCC grid system defines responsive layout scaffolding across mobile, tablet, and desktop viewports using consistent columns, gutters, and margins.</p>
+
+                <!-- 1. Overview -->
+                <section class="section">
+                    <h2>Overview</h2>
+                    <p>
+                        The GCC grid system provides a consistent layout framework for pages and components across all products.
+                        It defines how content aligns to columns, gutters, and margins at three primary breakpoints: Mobile (375px),
+                        Tablet (768px), and Desktop (1280px), as documented in the
+                        <a href="https://www.figma.com/design/7kKBUTxpLNPIQhfi731Jm3/Foundation-2.0?node-id=12025-10376"
+                           target="_blank" rel="noopener noreferrer">Figma Grid System</a>.
+                    </p>
+                    <p>
+                        Use the grid system for all page-level and major component layouts so that experiences feel aligned,
+                        readable, and predictable across breakpoints. The grid ensures consistent spacing and alignment whether
+                        content is viewed on mobile devices, tablets, or desktop screens.
+                    </p>
+                </section>
+
+                <!-- 2. Usage -->
+                <section class="section">
+                    <h2>Usage</h2>
+
+                    <h3>When to use</h3>
+                    <ul>
+                        <li>Page layouts (home, PDP, PLP, account, checkout, Wellbeing+ flows).</li>
+                        <li>Content sections composed of multiple components (e.g., hero + cards + tables).</li>
+                        <li>Any layout that must adapt responsively from mobile to desktop.</li>
+                        <li>Multi-column content areas that need consistent alignment.</li>
+                    </ul>
+
+                    <h3>When not to use</h3>
+                    <ul>
+                        <li>Inside small self-contained components (e.g., buttons, chips, individual cards).</li>
+                        <li>For icon alignment or micro-layouts that are better handled with intrinsic spacing tokens.</li>
+                        <li>For one-off marketing layouts that intentionally break the grid (only with design approval).</li>
+                        <li>For fixed-width components that don't need responsive behavior.</li>
+                    </ul>
+
+                    <h3>Dos &amp; Don'ts</h3>
+                    <h4>Do</h4>
+                    <ul>
+                        <li>Align major content boundaries to grid columns at each breakpoint.</li>
+                        <li>Use consistent gutters and margins defined by spacing tokens.</li>
+                        <li>Design first in the Figma Grid System file to validate column usage.</li>
+                        <li>Respect the container widths and margins specified for each breakpoint.</li>
+                    </ul>
+
+                    <h4>Don't</h4>
+                    <ul>
+                        <li>Hard-code pixel-based widths that ignore the grid.</li>
+                        <li>Mix different grid interpretations (e.g., custom columns) on the same page.</li>
+                        <li>Place critical content outside the grid or flush to the viewport edge without intent.</li>
+                        <li>Override grid margins or gutters with arbitrary spacing values.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Anatomy -->
+                <section class="section">
+                    <h2>Anatomy</h2>
+                    <p>The GCC grid system consists of the following core parts:</p>
+                    <ul>
+                        <li><strong>Viewport width</strong> – the device or browser width (e.g., 375px, 768px, 1280px).</li>
+                        <li><strong>Columns</strong> – vertical divisions that content aligns to (count varies by breakpoint: 4 for mobile/tablet, 10 for desktop).</li>
+                        <li><strong>Gutters</strong> – space between columns (16px for mobile, 24px for tablet/desktop).</li>
+                        <li><strong>Margins</strong> – space between the outermost columns and the viewport edge (16px for mobile, 32px for tablet, 48px for desktop).</li>
+                        <li><strong>Container</strong> – the content area width within the grid (343px for mobile, 704px for tablet, 1183px for desktop).</li>
+                    </ul>
+
+                    <h3>Grid Specifications</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Breakpoint</th>
+                                <th>Viewport Width</th>
+                                <th>Columns</th>
+                                <th>Gutter</th>
+                                <th>Margin</th>
+                                <th>Container Width</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mobile</strong></td>
+                                <td><code>375px</code></td>
+                                <td><code>4</code></td>
+                                <td><code>16px</code></td>
+                                <td><code>16px</code></td>
+                                <td><code>343px</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tablet</strong></td>
+                                <td><code>768px</code></td>
+                                <td><code>4</code></td>
+                                <td><code>24px</code></td>
+                                <td><code>32px</code></td>
+                                <td><code>704px</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desktop</strong></td>
+                                <td><code>1280px</code></td>
+                                <td><code>10</code></td>
+                                <td><code>24px</code></td>
+                                <td><code>48px</code></td>
+                                <td><code>1183px</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 4. Behavior & States (Responsive Behavior) -->
+                <section class="section">
+                    <h2>Behavior &amp; States</h2>
+                    <p>
+                        The grid system is responsive: it adapts column counts, gutters, and margins as the viewport crosses defined breakpoints.
+                        At narrower widths, layouts stack; at wider widths, content fans out across more columns.
+                    </p>
+                    <ul>
+                        <li><strong>Mobile (375px)</strong> – 4 columns with 16px gutters and margins; content area is 343px wide. Primary content stacks vertically with safe margins.</li>
+                        <li><strong>Tablet (768px)</strong> – 4 columns with 24px gutters and 32px margins; content area is 704px wide. Two or more columns allow side-by-side modules (e.g., nav + content).</li>
+                        <li><strong>Desktop (1280px)</strong> – 10 columns with 24px gutters and 48px margins; content area is 1183px wide. Full grid used for navigation, content, and sidebars.</li>
+                    </ul>
+                    <p>
+                        When designing interactions (drawers, modals, slide-overs), anchor them to the grid so that their widths
+                        and positions feel aligned with the underlying layout. Modal and drawer widths should respect grid margins
+                        and container constraints at each breakpoint.
+                    </p>
+                </section>
+
+                <!-- 5. Variants -->
+                <section class="section">
+                    <h2>Variants</h2>
+                    <p>The grid system supports a small set of layout variants based on viewport and content type:</p>
+                    <ul>
+                        <li><strong>Contained grid</strong> – content constrained to the container width, centered with margins (all breakpoints).</li>
+                        <li><strong>Full-bleed sections</strong> – background color or imagery extends to the viewport edge, while content still aligns to the grid columns.</li>
+                        <li><strong>Single-column focus</strong> – mobile layouts that prioritize one column of content with clear margins.</li>
+                        <li><strong>Multi-column layouts</strong> – desktop layouts that span multiple columns for complex content arrangements.</li>
+                    </ul>
+                    <p>
+                        Choose variants based on the complexity of the content: simple marketing sections can use full-bleed,
+                        whereas dense product and account layouts should use contained grids with proper column alignment.
+                    </p>
+                </section>
+
+                <!-- 6. Accessibility -->
+                <section class="section">
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>Keep line lengths within comfortable ranges (typically ~60–80 characters on desktop).</li>
+                        <li>Ensure tap and click targets maintain spacing even on narrow mobile grid configurations (minimum 44×44px touch targets).</li>
+                        <li>Avoid horizontally scrolling layouts except for clearly signposted carousels or tables.</li>
+                        <li>Respect user zoom and OS font scaling—grid-based layouts must not break when text size increases.</li>
+                        <li>Maintain sufficient contrast between content and background, especially when using full-bleed variants.</li>
+                    </ul>
+                </section>
+
+                <!-- 7. Tokens & Theming -->
+                <section class="section">
+                    <h2>Tokens &amp; Theming</h2>
+                    <p>
+                        Grid behavior should be driven by layout tokens and not hard-coded values. Typical tokens include:
+                    </p>
+                    <ul>
+                        <li><code>layout.grid.columns.mobile</code> (4), <code>layout.grid.columns.tablet</code> (4), <code>layout.grid.columns.desktop</code> (10)</li>
+                        <li><code>layout.grid.gutter.mobile</code> (16px), <code>layout.grid.gutter.tablet</code> (24px), <code>layout.grid.gutter.desktop</code> (24px)</li>
+                        <li><code>layout.grid.margin.mobile</code> (16px), <code>layout.grid.margin.tablet</code> (32px), <code>layout.grid.margin.desktop</code> (48px)</li>
+                        <li><code>layout.grid.container.mobile</code> (343px), <code>layout.grid.container.tablet</code> (704px), <code>layout.grid.container.desktop</code> (1183px)</li>
+                    </ul>
+                    <p>
+                        Implement these as CSS variables or theme values so layouts can be adjusted centrally. Do not hard-code
+                        pixel widths or ad‑hoc media queries in individual components.
+                    </p>
+                    <p>
+                        See <a href="spacing.html">Spacing</a> for the spacing scale and how gutters/margins relate to global spacing tokens.
+                    </p>
+                </section>
+
+                <!-- 8. Code & API -->
+                <section class="section">
+                    <h2>Code &amp; API</h2>
+                    <p>The grid system can be implemented using CSS Grid aligned to layout tokens. Example:</p>
+                    <pre><code>&lt;!-- Layout shell --&gt;
+&lt;main class="page"&gt;
+  &lt;section class="grid"&gt;
+    &lt;div class="grid-item"&gt;...content...&lt;/div&gt;
+    &lt;div class="grid-item"&gt;...content...&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+/* Example CSS using tokens */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--layout-grid-columns, 4), minmax(0, 1fr));
+  column-gap: var(--layout-grid-gutter);
+  margin-inline: var(--layout-grid-margin);
+  max-width: var(--layout-grid-container);
+  margin-inline: auto;
+}
+
+/* Mobile (default) */
+:root {
+  --layout-grid-columns: 4;
+  --layout-grid-gutter: 16px;
+  --layout-grid-margin: 16px;
+  --layout-grid-container: 343px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --layout-grid-columns: 4;
+    --layout-grid-gutter: 24px;
+    --layout-grid-margin: 32px;
+    --layout-grid-container: 704px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  :root {
+    --layout-grid-columns: 10;
+    --layout-grid-gutter: 24px;
+    --layout-grid-margin: 48px;
+    --layout-grid-container: 1183px;
+  }
+}</code></pre>
+                    <p>
+                        Integrate these tokens into your design system theme so that page templates and high-level layouts
+                        can consume them without redefining breakpoints. Always use the container width to constrain content
+                        at each breakpoint.
+                    </p>
+                </section>
+
+                <!-- 9. Examples -->
+                <section class="section">
+                    <h2>Examples</h2>
+                    <ul>
+                        <li><strong>PDP layout:</strong> Image gallery, product info, and recommendations aligned to desktop grid columns (10 columns), stacking on mobile (4 columns).</li>
+                        <li><strong>Checkout flow:</strong> Multi-step forms constrained to the container width (343px mobile, 704px tablet, 1183px desktop) with consistent margins at each breakpoint.</li>
+                        <li><strong>Account dashboard:</strong> Card-based modules arranged in 2–3 columns on desktop (spanning multiple of the 10 columns) and a single column on mobile.</li>
+                        <li><strong>Product listing:</strong> Grid of product cards that adapts from 1 column (mobile) to 2–3 columns (tablet) to 4–5 columns (desktop) while respecting grid alignment.</li>
+                    </ul>
+                    <p>
+                        Refer to the
+                        <a href="https://www.figma.com/design/7kKBUTxpLNPIQhfi731Jm3/Foundation-2.0?node-id=12025-10376"
+                           target="_blank" rel="noopener noreferrer">Figma Grid System</a>
+                        file for canonical examples of how content should align to the grid at each viewport width (Mobile 375px, Tablet 768px, Desktop 1280px).
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

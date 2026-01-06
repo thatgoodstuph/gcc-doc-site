@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography: Noto Sans Japan - GCC Design System</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">GCC Design System</h1>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+                        <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-section">
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Foundations</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../color.html" class="nav-link">Color</a></li>
+                            <li class="nav-subsection">
+                                <span class="nav-subsection-title">Typography</span>
+                                <ul class="nav-subsublist">
+                                    <li><a href="gt-walsheim.html" class="nav-link">Typography: GT Walsheim</a></li>
+                                    <li><span class="nav-link active">Typography: Noto Sans Japan</span></li>
+                                </ul>
+                            </li>
+                            <li><a href="../effects.html" class="nav-link">Effects</a></li>
+                            <li><a href="../spacing.html" class="nav-link">Spacing</a></li>
+                            <li><a href="../grid.html" class="nav-link">Grid System</a></li>
+                            <li><a href="../icons.html" class="nav-link">Icon</a></li>
+                            <li><a href="../illustrations.html" class="nav-link">Illustration</a></li>
+                            <li><a href="../logo.html" class="nav-link">Logo</a></li>
+                            <li><a href="../system-resources.html" class="nav-link">System Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Components</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../components/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../components/accordion.html" class="nav-link">Accordion</a></li>
+                            <li><a href="../../components/audio-player.html" class="nav-link">Audio Player</a></li>
+                            <li><a href="../../components/badge.html" class="nav-link">Badge / ABO Pin Level Badge</a></li>
+                            <li><a href="../../components/breadcrumb.html" class="nav-link">Breadcrumb</a></li>
+                            <li><a href="../../components/button.html" class="nav-link">Button</a></li>
+                            <li><a href="../../components/carousel.html" class="nav-link">Carousel</a></li>
+                            <li><a href="../../components/checkbox.html" class="nav-link">Checkbox</a></li>
+                            <li><a href="../../components/context-menu.html" class="nav-link">Context Menu / Ellipsis</a></li>
+                            <li><a href="../../components/country-flags.html" class="nav-link">Country Flags</a></li>
+                            <li><a href="../../components/date-picker.html" class="nav-link">Date Picker / Calendar</a></li>
+                            <li><a href="../../components/drawer.html" class="nav-link">Drawer</a></li>
+                            <li><a href="../../components/dropdowns.html" class="nav-link">Dropdowns</a></li>
+                            <li><a href="../../components/error-cards.html" class="nav-link">Error / Information Cards</a></li>
+                            <li><a href="../../components/header-web.html" class="nav-link">Header Web</a></li>
+                            <li><a href="../../components/highlights.html" class="nav-link">Highlights</a></li>
+                            <li><a href="../../components/inline-messages.html" class="nav-link">Inline Messages</a></li>
+                            <li><a href="../../components/input-fields.html" class="nav-link">Input Fields</a></li>
+                            <li><a href="../../components/loaders.html" class="nav-link">Loaders</a></li>
+                            <li><a href="../../components/modal.html" class="nav-link">Modal</a></li>
+                            <li><a href="../../components/notification.html" class="nav-link">Notification</a></li>
+                            <li><a href="../../components/pagination.html" class="nav-link">Pagination</a></li>
+                            <li><a href="../../components/pills-chips.html" class="nav-link">Pills / Chips</a></li>
+                            <li><a href="../../components/progress-tracker.html" class="nav-link">Progress Tracker / Slider / Stepper</a></li>
+                            <li><a href="../../components/quantity-selector.html" class="nav-link">Quantity Selector</a></li>
+                            <li><a href="../../components/radio-buttons.html" class="nav-link">Radio Buttons</a></li>
+                            <li><a href="../../components/section-divider.html" class="nav-link">Section Divider</a></li>
+                            <li><a href="../../components/slide-over.html" class="nav-link">Slide Over</a></li>
+                            <li><a href="../../components/tabs.html" class="nav-link">Tabs</a></li>
+                            <li><a href="../../components/tags.html" class="nav-link">Tags</a></li>
+                            <li><a href="../../components/text-area.html" class="nav-link">Text Area</a></li>
+                            <li><a href="../../components/toggle.html" class="nav-link">Toggle</a></li>
+                            <li><a href="../../components/tooltip.html" class="nav-link">Tooltip</a></li>
+                            <li><a href="../../components/variant-selector.html" class="nav-link">Variant Selector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Patterns</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../patterns/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../patterns/article.html" class="nav-link">Article</a></li>
+                            <li><a href="../../patterns/cart.html" class="nav-link">Cart</a></li>
+                            <li><a href="../../patterns/checkout.html" class="nav-link">Checkout</a></li>
+                            <li><a href="../../patterns/coupons-promo-cards.html" class="nav-link">Coupons & Promo Cards</a></li>
+                            <li><a href="../../patterns/data-visualization.html" class="nav-link">Data Visualization</a></li>
+                            <li><a href="../../patterns/education-cards.html" class="nav-link">Education Cards</a></li>
+                            <li><a href="../../patterns/footer.html" class="nav-link">Footer</a></li>
+                            <li><a href="../../patterns/ingredient-card.html" class="nav-link">Ingredient Card</a></li>
+                            <li><a href="../../patterns/list.html" class="nav-link">List</a></li>
+                            <li><a href="../../patterns/mobile-phone-verification.html" class="nav-link">Mobile Phone Verification</a></li>
+                            <li><a href="../../patterns/product-cards.html" class="nav-link">Product Cards</a></li>
+                            <li><a href="../../patterns/pdp-product-details.html" class="nav-link">PDP Product Details</a></li>
+                            <li><a href="../../patterns/ratings-reviews.html" class="nav-link">Ratings & Reviews</a></li>
+                            <li><a href="../../patterns/rich-text-editor.html" class="nav-link">Rich Text Editor</a></li>
+                            <li><a href="../../patterns/search.html" class="nav-link">Search</a></li>
+                            <li><a href="../../patterns/share-bar.html" class="nav-link">Share Bar</a></li>
+                            <li><a href="../../patterns/sop-components.html" class="nav-link">SOP Components</a></li>
+                            <li><a href="../../patterns/sort-filter.html" class="nav-link">Sort / Filter</a></li>
+                            <li><a href="../../patterns/table.html" class="nav-link">Table</a></li>
+                            <li><a href="../../patterns/user-name-password.html" class="nav-link">User Name / Password / Password Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Product / Market</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../product-specific/overview.html" class="nav-link">Overview</a></li>
+                            <li><a href="../../product-specific/abo-business-tools.html" class="nav-link">ABO Business Tools</a></li>
+                            <li><a href="../../product-specific/account-management.html" class="nav-link">Account Management Components</a></li>
+                            <li><a href="../../product-specific/ai-components.html" class="nav-link">AI Components</a></li>
+                            <li><a href="../../product-specific/amway-plus.html" class="nav-link">Amway+</a></li>
+                            <li><a href="../../product-specific/jtx-qualitative-research.html" class="nav-link">JTX 定性調査 UJ 1-3</a></li>
+                            <li><a href="../../product-specific/wellbeing-plus.html" class="nav-link">Wellbeing+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="nav-section-title">Meta</span>
+                        <ul class="nav-sublist">
+                            <li><a href="../../meta/about.html" class="nav-link">About GCC Design System</a></li>
+                            <li><a href="../../meta/how-to-use.html" class="nav-link">How to Use These Docs</a></li>
+                            <li><a href="../../meta/changelog.html" class="nav-link">Changelog</a></li>
+                            <li><a href="../../meta/contribution.html" class="nav-link">Contribution & Governance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h1>Typography: Noto Sans Japan</h1>
+                <p class="lead">Noto Sans JP is the primary typeface for Japanese (JP) content in the GCC Design System. This page documents the typography tokens, scale, and usage guidelines for Noto Sans Japan.</p>
+
+                <section class="section">
+                    <h2>Overview</h2>
+                    <p>Noto Sans Japan (JP) is the typography system used for all Japanese-language content and interfaces in GCC products. It provides a comprehensive type scale optimized for Japanese character rendering, with appropriate sizing and leading values that ensure readability for Japanese text.</p>
+                    <p>This typeface is specifically designed for Japanese content. For English (EN) content, see <a href="gt-walsheim.html">Typography: GT Walsheim</a>.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Type Scale</h2>
+                    <p>The Noto Sans JP type scale includes display styles, text styles, and utility styles. Each style specifies font size and line height in pixels. All styles support Regular, Medium, and Bold weights.</p>
+                    
+                    <h3>Display Styles</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Size / Line Height</th>
+                                <th>Line Height Ratio</th>
+                                <th>Tracking</th>
+                                <th>Weights</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Display 2XL</strong></td>
+                                <td><code>72px / 90px</code></td>
+                                <td>x1.25</td>
+                                <td>-2px</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large hero displays, major page titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display XL</strong></td>
+                                <td><code>60px / 75px</code></td>
+                                <td>x1.25</td>
+                                <td>-1px</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large displays, prominent headings</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display LG</strong></td>
+                                <td><code>48px / 60px</code></td>
+                                <td>x1.25</td>
+                                <td>-1px</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large headings, section titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display MD</strong></td>
+                                <td><code>36px / 45px</code></td>
+                                <td>x1.25</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Medium headings, subsection titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display SM</strong></td>
+                                <td><code>32px / 40px</code></td>
+                                <td>x1.25</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Small headings, component titles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display XS</strong></td>
+                                <td><code>24px / 30px</code></td>
+                                <td>x1.25</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Extra small headings, emphasized text</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Text Styles</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Size / Line Height</th>
+                                <th>Line Height Ratio</th>
+                                <th>Tracking</th>
+                                <th>Weights</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Text XL</strong></td>
+                                <td><code>20px / 26px</code></td>
+                                <td>x1.3</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Extra large body text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text LG</strong></td>
+                                <td><code>18px / 25px</code></td>
+                                <td>x1.389</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Large body text, emphasized content</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text MD</strong></td>
+                                <td><code>16px / 24px</code></td>
+                                <td>x1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Default body text, paragraphs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text SM</strong></td>
+                                <td><code>14px / 21px</code></td>
+                                <td>x1.5</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Secondary text, captions, helper text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text XS</strong></td>
+                                <td><code>12px / 16px</code></td>
+                                <td>x1.333</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>Labels, fine print, metadata</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Utility Styles</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Size / Line Height</th>
+                                <th>Line Height Ratio</th>
+                                <th>Tracking</th>
+                                <th>Weights</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Utility XXS</strong></td>
+                                <td><code>10px / 13px</code></td>
+                                <td>x1.3</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>JP-only utility text, very small labels</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Utility XXXS</strong></td>
+                                <td><code>8px / 11px</code></td>
+                                <td>x1.375</td>
+                                <td>0%</td>
+                                <td>Regular, Medium, Bold</td>
+                                <td>JP-only utility text, smallest labels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Note:</strong> Utility styles are JP-only and do not have English equivalents. These are designed specifically for Japanese typography needs.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Japanese-Specific Tokens</h2>
+                    <p>Noto Sans JP includes tokens that are unique to Japanese content and do not have English equivalents:</p>
+                    <ul>
+                        <li><strong>Utility XXS</strong> (10px / 13px) - JP-only utility text</li>
+                        <li><strong>Utility XXXS</strong> (8px / 11px) - JP-only utility text, smallest size</li>
+                    </ul>
+                    <p>These tokens are designed specifically for Japanese typography needs and should be used when appropriate for Japanese content.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Usage Guidelines</h2>
+                    <h3>Do</h3>
+                    <ul>
+                        <li>Use Noto Sans JP tokens consistently across Japanese content</li>
+                        <li>Use increased leading (line height) for Japanese text to improve readability</li>
+                        <li>Use Locale/JP-Paragraph styles for long-form Japanese text content</li>
+                        <li>Reference the mapping table when localizing from English content</li>
+                        <li>Use semantic HTML elements (h1-h6, p) with appropriate typography tokens</li>
+                    </ul>
+
+                    <h3>Don't</h3>
+                    <ul>
+                        <li>Hard-code font sizes or line heights—always use design tokens</li>
+                        <li>Mix Noto Sans JP with other typefaces in the same interface</li>
+                        <li>Use English typography tokens (GT Walsheim) for Japanese content</li>
+                        <li>Use condensed styles for Japanese text (no condensed JP styles available)</li>
+                        <li>Create custom font weights outside the defined system</li>
+                        <li>Use Utility styles for body text—they are designed for very small labels only</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Figma Reference</h2>
+                    <p>View the complete typography specifications in Figma:</p>
+                    <p><a href="https://www.figma.com/design/pnKdy1R3Y2DgxY7xel7TVx/Typography--Noto-Sans-Japan--JP-?node-id=14263-239" target="_blank" rel="noopener noreferrer">Typography: Noto Sans Japan (JP) - Figma</a></p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
+
