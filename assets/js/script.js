@@ -31,4 +31,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
+// Auto-set active navigation link based on current URL
+(function setActiveNavLink() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+        
+        // Create a temporary anchor to resolve relative paths
+        const tempAnchor = document.createElement('a');
+        tempAnchor.href = href;
+        
+        if (currentPath === tempAnchor.pathname || (currentPath === '/' && tempAnchor.pathname.endsWith('index.html'))) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+})();
